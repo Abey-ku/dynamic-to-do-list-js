@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
         storedTasks.forEach(taskText => addTask(taskText, false)); // 'false' indicates not to save again to Local Storage
     }
 
+    // Assuming you have an HTML element with an id 'myElement'
+    const element = document.getElementById('myElement');
+
+// Add a CSS class to this element
+     element.classList.add('new-class');
+
+
     // Function to add a new task
     function addTask(taskText, save = true) {
         // Create a new list item element
